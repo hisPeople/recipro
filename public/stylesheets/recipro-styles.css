@@ -1,0 +1,121 @@
+.container {
+	width: 940px;
+}
+
+body {
+	background: #fff;
+}
+
+header {
+/*	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	background: #FF4242; */
+}
+
+.header-gradient {
+	margin-top:20px;
+	height:75px;
+/*	background: #848991; /* old browsers */
+/*	background: -moz-linear-gradient(top, #848991 0%, #4F4E57 100%); /* firefox */
+/*	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#848991), color-stop(100%,#4F4E57)); /* webkit */
+/*	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#848991', endColorstr='#4F4E57',GradientType=0 ); /* ie */
+background: #72A5BF; /* old browsers */
+
+background: -moz-linear-gradient(top, #72A5BF 0%, #007DC3 100%); /* firefox */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#72A5BF), color-stop(100%,#007DC3)); /* webkit */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72A5BF', endColorstr='#007DC3',GradientType=0 ); /* ie */
+}
+
+.nav-gradient {
+background: #FFFFFF; /* old browsers */
+
+background: -moz-linear-gradient(top, #FFFFFF 0%, #EFEFEF 52%); /* firefox */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(52%,#EFEFEF)); /* webkit */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#EFEFEF',GradientType=0 ); /* ie */
+}
+
+header a {
+	color:#007DC3;
+	text-decoration:none;
+}
+
+header a:hover {
+	color:#007DC3;
+	text-decoration:none;
+}
+
+header a:visited {
+	color:#007DC3;
+	text-decoration:none;
+}
+
+section {
+	margin-top: 5  px;
+	font-size: 120%;
+	padding: 20px;
+	/* background: #F0F2EB; */
+	background: #fff;
+}
+
+section h1 {
+	font-size: 350%;
+}
+
+
+nav {
+	margin-top:-20px;
+	float:right;
+	font-size: 1.1em;
+	color:#007DC3;
+	border-style:default;
+	border-size:thin;
+	border-color:#007DC3;
+}
+
+nav ul {
+	margin:auto;
+	padding:10px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+nav ul li a {
+  padding: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: #007DC3;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.barely-round {
+  -moz-border-radius:    2px;
+  -webkit-border-radius: 2px;
+  border-radius:         2px;
+}
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.mini-shadow {
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
