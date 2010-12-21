@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @title = 'Home'
+    @recipe = Recipe.new if signed_in?
   end
 
   def contact

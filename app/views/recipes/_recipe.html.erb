@@ -1,0 +1,23 @@
+<tr>
+	<td class="recipe">
+		<div class="title"><%= recipe.title %></div>
+		<div class="prep_cook_time">
+			<strong>Prep time: </strong> <%= recipe.preptime %> minutes  |  <strong>Cook time: </strong> <%= recipe.cooktime %> minutes
+		</div>
+		<div class="ingredients">
+			<h4>Ingredients</h4>
+			<%= recipe.ingredients %>
+		</div>
+		<div class="directions">
+			<h4>Directions</h4>
+			<%= recipe.directions %>
+		</div>
+		<div class="servings">
+			<strong>Servings: </strong> <%= recipe.servings %>
+		</div>
+		<div class="timestamp">
+			Posted <%= time_ago_in_words(recipe.created_at) %> ago.
+		</div>
+	</td>
+</tr>
+		

@@ -28,6 +28,10 @@ module SessionsHelper
     clear_return_to
   end
   
+  def authenticate
+    deny_access unless signed_in?
+  end
+  
   def current_user
     @current_user ||= user_from_remember_token
   end

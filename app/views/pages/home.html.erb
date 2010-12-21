@@ -1,3 +1,17 @@
+<% if signed_in? %>
+	<table class="front" summary="For signed in users">
+		<tr>
+			<td class="main">
+				<h1 class="recipe">Add a new recipe!</h1>
+				<%= render 'shared/recipe_form' %>
+			</td>
+			<td class="sidebar round">
+				<%= render 'shared/user_info' %>
+			</td>
+		</tr>
+	</table>
+<% else %>
+
 <div id="welcome">
 <h1>Welcome!</h1>
 <ul>
@@ -10,3 +24,4 @@
 		
 <%= link_to "Sign up now!", signup_path, :class => "signup-button barely-round signup-button-gradient" %>
 </div>
+<% end %>

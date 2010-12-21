@@ -228,3 +228,75 @@ ul.users {
 .users li {
   list-style: none;
 }
+
+/* recipe styles */
+
+div.ingredients {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+div.directions {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+div.ingredients h4 {
+	margin-bottom: 0px;
+	text-decoration:underline;
+}
+
+div.directions h4 {
+	margin-bottom: 0px;
+	text-decoration:underline;
+}
+
+div.title {
+	padding-top:10px;
+	font-size:2em;
+}
+
+div.timestamp {
+	display:block;
+	font-size: 85%;
+	color:#666;
+}
+
+td.recipe {
+	border-top-style:solid;
+	border-top-width:1px;
+	border-top-color:#aaaaaa;
+	padding-bottom:10px;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+table.recipes {
+  margin-top: 1em;
+}
+
+table.recipes tr {
+  height: 70px;
+}
+
+table.recipes tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.recipes tr td.recipe {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}

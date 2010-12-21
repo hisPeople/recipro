@@ -19,5 +19,16 @@ namespace :db do
                    :password => password,
                    :password_confirmation => password)
     end
+    User.all(:limit => 10).each do |user|
+      50.times do
+        user.recipes.create!(
+        :title => Faker::Lorem.sentence(1),
+        :preptime => rand(75),
+        :cooktime => rand(75),
+        :ingredients => Faker::Lorem.sentence(5),
+        :directions => Faker::Lorem.paragraph,
+        :servings => rand(10))
+      end
+    end
   end
 end

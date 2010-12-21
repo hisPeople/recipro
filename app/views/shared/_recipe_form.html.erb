@@ -1,0 +1,30 @@
+<%= form_for @recipe do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+	<div class="field">
+		<%= f.label :title %><br />
+		<%= f.text_field :title %>
+	</div>
+	<div class ="field">
+		<%= f.label :preptime %>
+		<%= f.text_field :preptime %> minutes
+	</div>
+	<div class ="field">
+		<%= f.label :cooktime %>
+		<%= f.text_field :cooktime %> minutes
+	</div>
+	<div class="field">
+		<%= f.label :ingredients %><br />
+		<%= f.text_area :ingredients %>
+	</div>
+	<div class="field">
+		<%= f.label :directions %><br />
+		<%= f.text_area :directions %>
+	</div>
+	<div class="field">
+		<%= f.label :servings %><br />
+		<%= f.text_field :servings %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Save recipe" %>
+	</div>
+  <% end %>
