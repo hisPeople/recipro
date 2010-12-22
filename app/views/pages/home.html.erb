@@ -2,12 +2,13 @@
 	<table class="front" summary="For signed in users">
 		<tr>
 			<td class="main">
-				<h1 class="recipe">Add a new recipe!</h1>
+				<h1 class="recipe">Share a new recipe!</h1>
 				<%= render 'shared/recipe_form' %>
 				<%= render 'shared/feed' %>
 			</td>
 			<td class="sidebar round">
 				<%= render 'shared/user_info' %>
+				<%= render 'shared/stats' %>
 			</td>
 		</tr>
 	</table>
@@ -19,10 +20,12 @@
 	<li>Store recipes online!</li>
 	<li>Share recipes with your friends!</li>
 	<li>Create new recipes!</li>
-	<li>Use categories to organize your recipes!</li>
-	<li>Find new recipes and collaborate with others<li>
+	<li>Use categories to organize your recipes!*</li>
+	<li>Find new recipes and collaborate with others!<li>
 </ul>
 		
 <%= link_to "Sign up now!", signup_path, :class => "signup-button barely-round signup-button-gradient" %>
+
+	<p>* comming soon! (hopefully)</p>
 </div>
 <% end %>

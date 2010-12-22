@@ -6,16 +6,17 @@
 	  <%= render 'layouts/stylesheets' %>
 	  <%= javascript_include_tag :defaults %>
 	</head>
-<body>
+	<body>
 	<div class="header-gradient">
+		<h1><%= link_to "Recipro!", root_path%></h1>
 	</div>
-	
 	<div class="container">
 		<%= render 'layouts/header' %>
-			<section class="round">
-			<% flash.each do |key, value| %>
-        	<div class="flash <%= key %>"><%= value %></div>
-        	<% end %>
+		<section class="round">
+		<% flash.each do |key, value| %>
+        <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+
 			<%= yield %>
 		</section>
 	
