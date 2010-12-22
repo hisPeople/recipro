@@ -1,0 +1,32 @@
+<tr>
+	<td class="gravatar">
+		<%= link_to gravatar_for(feed_item.user), feed_item.user%>
+	</td>
+	<td class="recipe">
+		<div class="title"><%= feed_item.title %></div>
+		<div class="prep_cook_time">
+			<strong>Prep time: </strong> <%= feed_item.preptime %> minutes  |  <strong>Cook time: </strong> <%= feed_item.cooktime %> minutes
+		</div>
+		<div class="ingredients">
+			<h4>Ingredients</h4>
+			<%= feed_item.ingredients %>
+		</div>
+		<div class="directions">
+			<h4>Directions</h4>
+			<%= feed_item.directions %>
+		</div>
+		<div class="servings">
+			<strong>Servings: </strong> <%= feed_item.servings %>
+		</div>
+		<div class="timestamp">
+			Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
+		</div>
+	</td>
+	<% if current_user?(feed_item.user) %>
+	<td>
+		<%= link_to "delete", feed_item, :method => :delete,
+										 :confirm => "Are you sure?",
+										 :title => feed_item.title %>
+	</td>
+	<% end %>
+</tr>

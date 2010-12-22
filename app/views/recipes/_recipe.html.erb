@@ -19,5 +19,12 @@
 			Posted <%= time_ago_in_words(recipe.created_at) %> ago.
 		</div>
 	</td>
+	<% if current_user?(recipe.user) %>
+	<td>
+		<%= link_to "delete", recipe, :method => :delete,
+										 :confirm => "Are you sure?",
+										 :title => recipe.title %>
+	</td>
+	<% end %>
 </tr>
 		
